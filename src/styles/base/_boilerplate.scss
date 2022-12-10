@@ -1,0 +1,19 @@
+@use '@/styles/abstracts/variables' as *;
+
+html {
+  font-size: 16px;
+  line-height: $leading-normal;
+}
+
+body {
+  font-family: $font-sans;
+  font-size: $text-lg;
+  font-weight: $font-medium;
+  color: $color-coral-400;
+  background-color: $color-white;
+}
+
+::selection {
+  color: $color-coral-500;
+  background-color: $color-coral-100;
+}

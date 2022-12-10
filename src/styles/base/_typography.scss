@@ -1,0 +1,39 @@
+// Montserrat 400 Regular
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('montserrat-400-regular'), url('/fonts/montserrat-400.woff2') format('woff2'),
+    url('/fonts/montserrat-400.woff') format('woff');
+}
+
+// Montserrat 500 Medium
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('montserrat-500-medium'), url('/fonts/montserrat-500.woff2') format('woff2'),
+    url('/fonts/montserrat-500.woff') format('woff');
+}
+
+// Montserrat 600 SemiBold
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('montserrat-600-semibold'), url('/fonts/montserrat-600.woff2') format('woff2'),
+    url('/fonts/montserrat-600.woff') format('woff');
+}
+
+// Montserrat 700 Bold
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('montserrat-700-bold'), url('/fonts/montserrat-700.woff2') format('woff2'),
+    url('/fonts/montserrat-700.woff') format('woff');
+}
