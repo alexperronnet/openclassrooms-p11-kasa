@@ -1,0 +1,81 @@
+@use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/mixins' as *;
+
+.not-found {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  text-align: center;
+  margin-block-end: 3rem;
+
+  @media (max-width: $breakpoint-tablet) {
+    gap: 4rem;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    gap: 3rem;
+  }
+}
+
+.not-found__infos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.not-found__title {
+  font-size: $text-9xl;
+  font-weight: $font-bold;
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: $text-7xl;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: $text-5xl;
+  }
+}
+
+.not-found__text {
+  font-size: $text-2xl;
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: $text-xl;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: $text-lg;
+  }
+}
+
+.not-found__link {
+  font-size: $text-lg;
+  position: relative;
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: $text-base;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: $text-sm;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 0.125rem;
+    background-color: $color-coral-400;
+    transition: width $transition;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
