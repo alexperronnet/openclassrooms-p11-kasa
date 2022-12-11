@@ -1,0 +1,26 @@
+@use '@/styles/abstracts/variables' as *;
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem;
+  background-color: $color-neutral-100;
+  border-radius: $rounded-lg;
+
+  @media (max-width: $breakpoint-desktop) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 0;
+    background-color: transparent;
+  }
+}

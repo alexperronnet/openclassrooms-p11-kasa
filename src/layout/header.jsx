@@ -1,10 +1,12 @@
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { Logo } from '@/components'
 
 export default function Header() {
   return (
     <header className="header">
-      <Logo className="header__logo" />
+      <Link to="/" className="header__logo-wrapper">
+        <Logo className="header__logo" />
+      </Link>
       <nav className="header__nav">
         <NavLink to="/" className="header__nav-link">
           Accueil

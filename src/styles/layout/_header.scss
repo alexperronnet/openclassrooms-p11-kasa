@@ -14,9 +14,20 @@
   }
 }
 
+.header__logo-wrapper {
+  &:hover {
+    color: $color-coral-600;
+  }
+
+  &:focus-visible {
+    outline: 0.125rem solid $color-coral-600;
+    outline-offset: 0.5rem;
+  }
+}
+
 .header__logo {
   height: 2.5rem;
-  width: auto;
+  transition: color $transition;
 
   @media (max-width: $breakpoint-mobile) {
     height: 2rem;

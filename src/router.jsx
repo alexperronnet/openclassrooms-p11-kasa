@@ -7,7 +7,7 @@ export default function Router() {
   const data = useFetch()
 
   const routes = [
-    { path: '/', element: <Home /> },
+    { path: '/', element: <Home data={data} /> },
     { path: '/a-propos', element: <About /> },
     { path: '*', element: <NotFound /> },
     data?.map(item => ({
