@@ -78,4 +78,10 @@
   &:hover::after {
     width: 100%;
   }
+
+  &:focus-visible {
+    outline: 0.125rem solid $color-coral-600;
+    outline-offset: 1rem;
+    // border-radius: $rounded-sm;
+  }
 }
