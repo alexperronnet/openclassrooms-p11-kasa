@@ -1,0 +1,70 @@
+@use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/mixins' as *;
+
+.header {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 3rem;
+
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.header__logo {
+  height: 2.5rem;
+  width: auto;
+
+  @media (max-width: $breakpoint-mobile) {
+    height: 2rem;
+  }
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header__nav-link {
+  position: relative;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: $text-sm;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -0.25rem;
+    left: 0;
+    width: 100%;
+    height: 0.125rem;
+    background-color: $color-coral-400;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform $transition;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+  }
+
+  &[aria-current='page'] {
+    color: $color-coral-600;
+
+    &::after {
+      transform: scaleX(1);
+      background-color: $color-coral-600;
+    }
+  }
+
+  &:focus-visible {
+    outline: 0.125rem solid $color-coral-600;
+    outline-offset: 0.5rem;
+    border-radius: $rounded-sm;
+  }
+}

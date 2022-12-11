@@ -7,7 +7,6 @@ html {
 
 body {
   font-family: $font-sans;
-  font-size: $text-lg;
   font-weight: $font-medium;
   color: $color-coral-400;
   background-color: $color-white;
@@ -16,4 +15,11 @@ body {
 ::selection {
   color: $color-coral-500;
   background-color: $color-coral-100;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
