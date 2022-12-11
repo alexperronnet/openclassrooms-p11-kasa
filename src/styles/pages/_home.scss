@@ -1,0 +1,8 @@
+@use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/mixins' as *;
+
+.home {
+  @include container;
+  margin-block-end: 3rem;
+  flex-grow: 1;
+}

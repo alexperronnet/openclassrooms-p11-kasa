@@ -1,3 +1,10 @@
+import { Banner } from '@/components'
+import bannerSrc from '/images/banner-home.webp'
+
 export default function Home() {
-  return <h1>Home</h1>
+  return (
+    <div className="home">
+      <Banner title="Chez vous, partout et ailleurs" image={bannerSrc} />
+    </div>
+  )
 }
