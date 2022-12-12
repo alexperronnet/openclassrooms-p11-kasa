@@ -1,0 +1,19 @@
+@use '@/styles/abstracts/variables' as *;
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.star {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: $color-neutral-200;
+  fill: $color-neutral-200;
+
+  &--active {
+    color: $color-coral-400;
+    fill: $color-coral-400;
+  }
+}

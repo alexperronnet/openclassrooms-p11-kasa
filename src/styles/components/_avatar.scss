@@ -1,0 +1,28 @@
+@use '@/styles/abstracts/variables' as *;
+
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar__name {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+}
+
+.avatar__first-name {
+  font-size: $text-sm;
+}
+
+.avatar__last-name {
+  font-weight: $font-semibold;
+}
+
+.avatar__image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: $rounded-full;
+  object-fit: cover;
+}
