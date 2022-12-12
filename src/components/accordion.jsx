@@ -16,7 +16,17 @@ export default function Accordion({ title, children }) {
         <Icon name="chevron-down" className="accordion__icon" />
       </button>
       <div className="accordion__content" ref={contentRef}>
-        <p className="accordion__text">{children}</p>
+        {typeof children === 'string' ? (
+          <p className="accordion__text">{children}</p>
+        ) : (
+          <ul className="accordion__list">
+            {children.map((item, i) => (
+              <li key={i} className="accordion__list-item">
+                {item}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   )
