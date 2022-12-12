@@ -12,7 +12,7 @@ export default function Router() {
     { path: '*', element: <NotFound /> },
     data?.map(item => ({
       path: `/location/${item.id}`,
-      element: <Rental />
+      element: <Rental data={item} />
     }))
   ].flat()
 
