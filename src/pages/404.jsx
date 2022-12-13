@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
+import { useSeo } from '@/hooks'
 
 export default function notFound() {
+  useSeo({ page: 'Page introuvable' })
+
   return (
     <div className="not-found">
       <div className="not-found__infos">

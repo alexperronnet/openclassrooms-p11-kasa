@@ -1,7 +1,10 @@
 import { Banner, Accordion } from '@/components'
+import { useSeo } from '@/hooks'
 import bannerSrc from '/images/banner-about.webp'
 
 export default function About() {
+  useSeo({ page: 'À propos' })
+
   const aboutContent = [
     {
       title: 'Fiabilité',

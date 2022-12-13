@@ -1,6 +1,9 @@
 import { Carousel, Accordion, Avatar, Rating } from '@/components'
+import { useSeo } from '@/hooks'
 
 export default function Rental({ data }) {
+  useSeo({ page: data.title })
+
   return (
     <div className="rental">
       <Carousel pictures={data.pictures} />
