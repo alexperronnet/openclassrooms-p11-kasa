@@ -1,0 +1,34 @@
+@use '@/styles/abstracts/variables' as *;
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+  padding: 0.5rem;
+  border-radius: $rounded-full;
+  background-color: $color-coral-400;
+  color: $color-white;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity $transition, background-color $transition;
+
+  &:hover {
+    background-color: $color-coral-500;
+  }
+
+  &:focus-visible {
+    outline: 0.125rem solid $color-coral-600;
+    outline-offset: 0.25rem;
+  }
+
+  &--active {
+    opacity: 1;
+  }
+}
+
+.back-to-top__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}

@@ -32,11 +32,15 @@
 }
 
 .rental__title {
-  font-size: $text-xl;
+  font-size: $text-2xl;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
   font-weight: $font-semibold;
+
+  @media (max-width: $breakpoint-desktop) {
+    font-size: $text-xl;
+  }
 
   @media (max-width: $breakpoint-tablet) {
     align-items: center;

@@ -1,4 +1,4 @@
-import { Header, Footer } from '@/layout'
+import { Header, Footer, BackToTop } from '@/layout'
 
 export default function Layout({ children }) {
   return (
@@ -6,6 +6,7 @@ export default function Layout({ children }) {
       <Header />
       {children}
       <Footer />
+      <BackToTop />
     </>
   )
 }
