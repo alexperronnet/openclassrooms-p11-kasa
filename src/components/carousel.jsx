@@ -35,6 +35,7 @@ export default function Carousel({ pictures }) {
         <div className="carousel__controls">
           <button className="carousel__control" onClick={() => handleSlide('left')}>
             <Icon name="chevron-left" className="carousel__icon" />
+            <span className="carousel__control-text">Précédent</span>
           </button>
           <div className="carousel__dots">
             {pictures.map((_, i) => (
@@ -42,11 +43,14 @@ export default function Carousel({ pictures }) {
                 key={i}
                 className={`carousel__dot ${i === slide ? 'carousel__dot--active' : ''}`}
                 onClick={() => setSlide(i)}
-              />
+              >
+                <span className="carousel__dot-text">Diapositive {i + 1}</span>
+              </button>
             ))}
           </div>
           <button className="carousel__control" onClick={() => handleSlide('right')}>
             <Icon name="chevron-right" className="carousel__icon" />
+            <span className="carousel__control-text">Suivant</span>
           </button>
         </div>
       )}

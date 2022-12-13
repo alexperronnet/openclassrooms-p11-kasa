@@ -24,6 +24,7 @@ export default function BackToTop() {
     // Set active class to show button
     <button className={`back-to-top ${showButton ? 'back-to-top--active' : ''}`} onClick={() => window.scrollTo(0, 0)}>
       <Icon name="arrow-up" className="back-to-top__icon" />
+      <span className="back-to-top__text">Haut de page</span>
     </button>
   )
 }

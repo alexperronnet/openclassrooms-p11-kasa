@@ -6,6 +6,7 @@ export default function Header() {
     <header className="header">
       <Link to="/" className="header__logo-wrapper">
         <Logo className="header__logo" />
+        <span className="header__logo-text">Kasa</span>
       </Link>
       <nav className="header__nav">
         <NavLink to="/" className="header__nav-link">

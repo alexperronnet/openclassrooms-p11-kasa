@@ -65,11 +65,11 @@
   }
 
   &[aria-current='page'] {
-    color: $color-coral-600;
+    color: $color-coral-700;
 
     &::after {
       transform: scaleX(1);
-      background-color: $color-coral-600;
+      background-color: $color-coral-700;
     }
   }
 
@@ -77,4 +77,8 @@
     outline: 0.125rem solid $color-coral-600;
     outline-offset: 0.5rem;
   }
+}
+
+.header__logo-text {
+  @include sr-only;
 }
