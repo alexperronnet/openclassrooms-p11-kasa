@@ -10,7 +10,7 @@ cd dist
 git init
 
 # Check if main branch exists
-if git ls-remote --exit-code --heads origin deploy; then
+if git ls-remote --exit-code --heads origin deploy-v1; then
   git checkout main
 else
   git checkout -b main
@@ -23,6 +23,6 @@ git add -A
 git commit -m 'Deploy'
 
 # Push to deploy branch
-git push -f git@github.com:alexperronnet/openclassrooms-p11-kasa.git main:deploy
+git push -f git@github.com:alexperronnet/openclassrooms-p11-kasa.git main:deploy-v1
 
 cd -
