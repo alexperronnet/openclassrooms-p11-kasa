@@ -41,13 +41,13 @@ git checkout main-v1
 ### Install dependencies
 
 ```bash
-pnpm install (or npm install or yarn install)
+pnpm install #or npm install or yarn install
 ```
 
 ### Run the application
 
 ```bash
-pnpm run dev (or npm run dev or yarn dev)
+pnpm run dev #or npm run dev or yarn dev
 ```
 
 ## Deployment
