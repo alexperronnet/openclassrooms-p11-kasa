@@ -29,7 +29,7 @@ git clone https://github.com/alexperronnet/openclassrooms-p11-kasa.git
 ### Navigate to the project folder
 
 ```bash
-cd openclassrooms-p7-les-petits-plats
+cd openclassrooms-p11-kasa
 ```
 
 ### Switch to the original version branch
