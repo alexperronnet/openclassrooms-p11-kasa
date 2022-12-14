@@ -52,7 +52,7 @@ pnpm run dev #or npm run dev or yarn dev
 
 ## Deployment
 
-The application is deployed on [Netlify](https://www.netlify.com/).
+The application is deployed on [Netlify](https://www.netlify.com/). You can find it [here](https://ap-openclassrooms-p11-kasa-v1.netlify.app/).
 
 ## License
 
