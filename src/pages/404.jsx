@@ -5,7 +5,7 @@ export default function notFound() {
   useSeo({ page: 'Page introuvable' })
 
   return (
-    <div className="not-found">
+    <main className="not-found">
       <div className="not-found__infos">
         <h1 className="not-found__title">404</h1>
         <p className="not-found__text">Oups ! La page que vous demandez n'existe pas...</p>
@@ -13,6 +13,6 @@ export default function notFound() {
       <Link to="/" className="not-found__link">
         Retourner sur la page d’accueil
       </Link>
-    </div>
+    </main>
   )
 }

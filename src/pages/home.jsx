@@ -6,9 +6,9 @@ export default function Home({ data }) {
   useSeo({ page: 'Accueil' })
 
   return (
-    <div className="home">
+    <main className="home">
       <Banner title="Chez vous, partout et ailleurs" image={bannerSrc} />
       {data ? <Gallery data={data} /> : <Loader />}
-    </div>
+    </main>
   )
 }

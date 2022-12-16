@@ -29,7 +29,7 @@ export default function About() {
   ]
 
   return (
-    <div className="about">
+    <main className="about">
       <Banner image={bannerSrc} />
       <h1 className="about__title">Les valeurs de Kasa</h1>
       <div className="about__content">
@@ -39,6 +39,6 @@ export default function About() {
           </Accordion>
         ))}
       </div>
-    </div>
+    </main>
   )
 }

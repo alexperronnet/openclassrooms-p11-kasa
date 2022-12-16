@@ -5,7 +5,7 @@ export default function Rental({ data }) {
   useSeo({ page: data.title })
 
   return (
-    <div className="rental">
+    <main className="rental">
       <Carousel pictures={data.pictures} />
       <div className="rental__header">
         <div className="rental__header-top">
@@ -29,6 +29,6 @@ export default function Rental({ data }) {
         <Accordion title="Description">{data.description}</Accordion>
         <Accordion title="Équipment">{data.equipments}</Accordion>
       </div>
-    </div>
+    </main>
   )
 }
