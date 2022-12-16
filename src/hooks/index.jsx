@@ -1,2 +1,2 @@
-export { default as useSeo } from '@/hooks/useSeo'
-export { default as useFetch } from '@/hooks/useFetch'
+export { default as useSeo } from '@/hooks/use-seo'
+export { default as useFetch } from '@/hooks/use-fetch'
