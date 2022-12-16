@@ -16,7 +16,7 @@
 
 .header__logo-wrapper {
   &:hover {
-    color: $color-coral-600;
+    color: $color-coral-700;
   }
 
   &:focus-visible {
@@ -54,7 +54,7 @@
     left: 0;
     width: 100%;
     height: 0.125rem;
-    background-color: $color-coral-400;
+    background-color: $color-coral-600;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform $transition;
